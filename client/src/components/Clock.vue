@@ -32,11 +32,13 @@
 				</div>
 				<v-row>
 					<v-col>
-						<p>Start of Day</p>
+						<p>Start</p>
+						<p>{{zeroPad(startH, 2)}}:{{zeroPad(startM, 2)}}</p>
 						<p >{{sinceStart}}</p>
 					</v-col>
 					<v-col>
-						<p>End of Day</p>
+						<p>End</p>
+						<p>{{zeroPad(endH, 2)}}:{{zeroPad(endM, 2)}}</p>
 						<p>{{untilEnd}}</p>
 					</v-col>
 				</v-row>
