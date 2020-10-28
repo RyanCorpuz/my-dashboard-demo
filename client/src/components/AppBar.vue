@@ -16,9 +16,9 @@
 			v-for="item in items"
 			v-on:click="go(item.ref)"
 			v-bind:key="item.name"
-			small
+			x-small
 		>
-			<v-icon>{{item.icon}}</v-icon>
+			<v-icon small>{{item.icon}}</v-icon>
 		</v-btn>
 	</v-app-bar>
 </template>
