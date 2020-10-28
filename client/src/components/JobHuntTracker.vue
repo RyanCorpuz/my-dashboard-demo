@@ -1,6 +1,6 @@
 <template>
 	<v-card
-		class="ma-4 tracker"
+		class="ma-4"
 		width="95%"
 		height="400"
 		style="overflow:auto"
@@ -204,9 +204,6 @@ export default {
 
 <style>
 .toolbar {
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0;
 	z-index: 1;
 }
 .v-input__append-inner {

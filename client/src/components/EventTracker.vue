@@ -1,6 +1,7 @@
 <template>
 	<v-card
 		class="ma-4"
+		width="95%"
 		height="400"
 		style="overflow-y:auto"
 	>
