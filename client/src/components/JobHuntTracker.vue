@@ -9,21 +9,22 @@
 			height="50"
 			class="toolbar"
 		>
-			<v-row>
-				<v-col cols="12" sm="6">
-					<v-card-title>Job Hunt Tracker</v-card-title>
-				</v-col>
-				<v-col cols="12" sm="3">
+				<v-toolbar-title>Job Hunt Tracker</v-toolbar-title>
+				<v-spacer></v-spacer>
+				<v-col cols="3"
+					class="d-none d-sm-flex"
+				>
 					<v-card-text>
 						Total: {{totalApplied}}
 					</v-card-text>
 				</v-col>
-				<v-col cols="12" sm="3">
+				<v-col cols="5"
+					class="d-none d-sm-flex"
+				>
 					<v-card-text>
 						Last 7 Days: {{lastSevenDaysApplied}}
 					</v-card-text>
 				</v-col>
-			</v-row>
 			<JobHuntTrackerForm v-on:add-job="addJob" />
 		</v-toolbar>
 		<v-data-table
